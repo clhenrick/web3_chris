@@ -10,6 +10,8 @@
 body { 
     font-size:100%;  /* 12px */
     padding-top:3em; /* 36px */
+
+    transition:background-color 3s;
     }
 
 

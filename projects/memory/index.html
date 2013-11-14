@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<hmtl>
+	<head>
+	</head>
+	<style type="text/css">
+
+		body {
+			margin: 0px auto;
+			width: 100%;
+		}
+
+		ul {
+			list-style-type: none;
+			position: relative;
+			display: block;
+		}
+
+		li {
+			position: relative;
+			display: inline;
+			padding: 0;
+			margin: 0;
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			border: 1px black;
+			text-align: center;
+			line-height: 100px;
+			top: 10px;
+		}
+
+		li:hover {
+
+		}
+
+		li p .top {
+			position: relative;
+			top: -10px;
+		}
+
+	</style>
+	<body>
+
+		<ul id="top row">
+			<li id = "1"><p class = "top">X</p></li>
+			<li id = "2">X</li>
+			<li id = "3">X</li>
+			<li id = "4">X</li>
+			<li id = "5">X</li>
+			<li id = "6">X</li>
+		</ul>	
+
+		<script>
+
+			var myList = document.getElementsByTagName("li");
+			console.log(myList);
+
+			for (var i = 0; i<myList.length; i++){
+
+				myList[i].addEventListener('mouseover', function(){
+					this.style.background = '#fff';
+				})
+
+				myList[i].addEventListener('mouseout', function(){
+					this.style.background = 'orange';
+				})
+
+			}
+
+			function flipCard() {
+
+
+			}
+
+		</script>
+
+	</body>
+</html>

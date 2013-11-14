@@ -30,6 +30,7 @@ $('#draft button').click( function(event){
     var post = {};
     post.title = $('#title').val();
     post.content = $('#content').val();
+    post.id = posts.length + 1; // adds post id value
 
     // add post to posts
     posts.push(post);
@@ -130,11 +131,11 @@ function loadPosts(){
         }
 
         //adding click to toggle function
-        $('article').click( function(){
-            console.log("clicked article!");
-            $(this).toggleClass("highlight");
+        // $('article').click( function(){
+        //     console.log("clicked article!");
+        //     $(this).toggleClass("highlight");
 
-        });
+        // });
 
     } else { // nothing in storage?
     
@@ -146,6 +147,17 @@ function loadPosts(){
 
 // load posts on page load
 loadPosts();
+
+$('feed').on('click', 'article', function(){
+
+    console.log('clicked');
+
+    // removeClass only lets one class change
+    $('article').removeClass('active');
+
+    // toggles the CSS to active
+    $(this).toggleClass('active');
+});
 
 
 /**

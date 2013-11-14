@@ -44,11 +44,11 @@ article {
 }
 
 article:hover {
-    background:#fff;
+    background:#dd3737;
 }
 
-article.highlight {
-    background: yellow;
+article.active {
+    background: #dd3737;
 }
     
     

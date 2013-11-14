@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+	<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+	<![endif]-->
+	<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+	</head>
+
+	<body>
+		<div id='map'></div>
+
+		<script type="text/javascript">
+
+		var json = 'http://henrc131.cartodb.com/api/v2/viz/83f1199a-30e9-11e3-a81a-2f2234014920/viz.json';
+
+		cartodb.createVis('map', json);
+
+		</script>
+	</body>
+
+</html>
